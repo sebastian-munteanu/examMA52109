@@ -45,6 +45,8 @@ from .plotting_clustered import plot_clusters_2d, plot_elbow
 # --- High-level interface ---
 from .interface import run_clustering
 
+# Agglomerative
+from .agglomerative import agglomerative_clustering, _compute_centroids
 
 __all__ = [
     # Data generation
@@ -81,4 +83,8 @@ __all__ = [
 
     # High-level orchestration
     "run_clustering",
+
+    # Agglomerative
+    "agglomerative_clustering",
+    "_compute_centroids",
 ]
